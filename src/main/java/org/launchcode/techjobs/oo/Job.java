@@ -31,15 +31,15 @@ public class Job {
     }
     public String toString(){
         if(name.equals("")){
-            name = "Name not valid";
-        } else if(employer.getValue().equals("")) {
-            employer.setValue("Employer not valid");
-        } else if(location.getValue().equals("")) {
-            location.setValue("Location not valid");
-        } else if(positionType.getValue().equals("")) {
-            positionType.setValue("Position Type not valid");
-        } else if(coreCompetency.getValue().equals("")) {
-            coreCompetency.setValue("Core Competency not valid");
+            name = "Data not available";}
+        if(employer.getValue().equals("")) {
+            employer.setValue("Data not available");}
+         if(location.getValue().equals("")) {
+            location.setValue("Data not available");
+        } if(positionType.getValue().equals("")) {
+            positionType.setValue("Data not available");
+        } if(coreCompetency.getValue().equals("")) {
+            coreCompetency.setValue("Data not available");
         }
         String output = String.format(
                         "ID: %d\n" +

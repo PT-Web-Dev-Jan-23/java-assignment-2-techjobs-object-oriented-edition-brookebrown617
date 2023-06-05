@@ -86,20 +86,20 @@ public class JobTest {
                 "Position Type: Customer Service\n" +
                 "Core Competency: Baddie\n");
     }
-//    @Test
-//    public void testToStringHandlesEmptyField(){
-//        Job testJob = new Job("",
-//                new Employer(""),
-//                new Location(""),
-//                new PositionType(""),
-//                new CoreCompetency(""));
-//        String testJobString = testJob.toString();
-//        assertEquals(testJobString,
-//                "\nID: " + testJob.getId() + "\n" +
-//                "\nName: Name not valid\n" +
-//                "\nEmployer: Employer not valid\n" +
-//                "\nLocation: Location not valid\n" +
-//                "\nPosition Type: Position Type not valid\n" +
-//                "\nCore Competency: Core Competency not valid\n");
-//    }
+    @Test
+    public void testToStringHandlesEmptyField(){
+        Job testJob = new Job("",
+                new Employer(""),
+                new Location(""),
+                new PositionType(""),
+                new CoreCompetency(""));
+        String testJobString = testJob.toString();
+        assertEquals(testJobString,
+                "ID: " + testJob.getId() + "\n" +
+                "Name: Data not available\n" +
+                "Employer: Data not available\n" +
+                "Location: Data not available\n" +
+                "Position Type: Data not available\n" +
+                "Core Competency: Data not available\n");
+    }
 }
