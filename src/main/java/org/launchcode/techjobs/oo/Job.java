@@ -42,12 +42,12 @@ public class Job {
             coreCompetency.setValue("Core Competency not valid");
         }
         String output = String.format(
-                        "\nID: %d\n" +
-                        "\nName: %s\n" +
-                        "\nEmployer: %s\n" +
-                        "\nLocation: %s\n" +
-                        "\nPosition Type: %s\n" +
-                        "\nCore Competency: %s\n", id, name, employer, location, positionType, coreCompetency);
+                        "ID: %d\n" +
+                        "Name: %s\n" +
+                        "Employer: %s\n" +
+                        "Location: %s\n" +
+                        "Position Type: %s\n" +
+                        "Core Competency: %s\n", id, name, employer, location, positionType, coreCompetency);
         return output;
     }
 
